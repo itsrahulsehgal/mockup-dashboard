@@ -4,6 +4,7 @@ import Hero from "./sections/Hero";
 function App() {
   return (
     <MainWrapper>
+      <LeftSection />
       <Hero />
     </MainWrapper>
   );
