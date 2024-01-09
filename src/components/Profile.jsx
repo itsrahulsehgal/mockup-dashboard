@@ -32,7 +32,8 @@ const Profile = () => {
             <button>
               <select name="dd">
                 <option value="some text">I want to</option>
-                <option value="some text">some text</option>
+                <option value="some text">Withdraw</option>
+                <option value="some text">Invest</option>
               </select>
             </button>
           </div>
