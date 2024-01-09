@@ -89,6 +89,9 @@ const Container = styled.div`
     padding: 0px;
     margin: 0px;
   }
+  @media screen and (min-width: 769px) and (max-width: 902px) {
+    margin-left: 60px;
+  }
 `;
 
 const SliderWrapper = styled.div`
