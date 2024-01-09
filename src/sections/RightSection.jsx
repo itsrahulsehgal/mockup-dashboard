@@ -1,7 +1,19 @@
+import React, { useState } from "react";
 import styled from "styled-components";
 import Slider from "@mui/material/Slider";
 
 const RightSection = () => {
+  const [employeeContribution, setEmployeeContribution] = useState(12);
+  const [retirementAge, setRetirementAge] = useState(65);
+
+  const handleEmployeeContributionChange = (event, newValue) => {
+    setEmployeeContribution(newValue);
+  };
+
+  const handleRetirementAgeChange = (event, newValue) => {
+    setRetirementAge(newValue);
+  };
+
   return (
     <RightWrapper>
       <Container>
@@ -12,30 +24,33 @@ const RightSection = () => {
               <p>Employee Contribution</p>
               <div>
                 <Slider
-                  defaultValue={12}
+                  value={employeeContribution}
+                  onChange={handleEmployeeContributionChange}
                   valueLabelDisplay="auto"
                   style={{ color: "#8cb3ff" }}
                 />
-                <p>12%</p>
+                <p>{employeeContribution}%</p>
               </div>
             </div>
             <div>
               <p>Retirement Age</p>
               <div>
                 <Slider
-                  defaultValue={65}
+                  value={retirementAge}
+                  onChange={handleRetirementAgeChange}
                   valueLabelDisplay="auto"
                   style={{ color: "#8cb3ff" }}
                 />
-                <p>65</p>
+                <p>{retirementAge}</p>
               </div>
             </div>
+            {/* Add more sliders as needed */}
           </SliderWrapper>
 
           <InfoWrapper>
             <div>
               <p>Employee Contribution</p>
-              <p>8.5%</p>
+              <p>{employeeContribution}%</p>
             </div>
             <div>
               <p>Interest Rate</p>
