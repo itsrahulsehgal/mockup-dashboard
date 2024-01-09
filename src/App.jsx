@@ -1,11 +1,13 @@
 import styled from "styled-components";
 import Hero from "./sections/Hero";
 import LeftSection from "./sections/LeftSection";
+import RightSection from "./sections/RightSection";
 function App() {
   return (
     <MainWrapper>
       <LeftSection />
       <Hero />
+      <RightSection/>
     </MainWrapper>
   );
 }
